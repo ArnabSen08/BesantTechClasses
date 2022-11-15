@@ -1,0 +1,47 @@
+<html>
+
+<head>
+    <style>
+        div {
+            height: 300px;
+        }
+        
+        #one {
+            background-color: green;
+            position: sticky;
+            top: 0%;
+        }
+        
+        #two {
+            background-color: red;
+            position: absolute;
+        }
+        
+        #three {
+            background-color: blue;
+            position: fixed;
+        }
+        
+        #four {
+            background-color: yellow;
+            position: relative;
+            top: 100;
+        }
+        
+        #five {
+            background-color: maroon;
+            position: static;
+            top: 100;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="one">postion is sticky,relative but needs mandatory top,left,bottom or right</div>
+    <div id="two">postion is absolute, relative but dimensions are based on content it holds</div>
+    <div id="three">postion is fixed, not relative but dimensions are based on content it holds</div>
+    <div id="four">position is relative, relative but does not respect properties like top,bottom,left and right</div>
+    <div id="five">position is static, relative but does not respect properties like top,bottom,left and right</div>
+</body>
+
+</html>

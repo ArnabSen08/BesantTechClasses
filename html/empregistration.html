@@ -1,0 +1,80 @@
+<html>
+
+<head>
+
+</head>
+
+<body>
+    <form action="usereg.asp" method="get" novalidate>
+        <table width="100%">
+            <tr style="background-color: blue;color:white;">
+                <td colspan="2"> Registration Form</td>
+            </tr>
+            <tr>
+                <td> <label> First Name:</label></td>
+                <td> <input required placeholder="enter first name" title="enter first name" minlength="3" type="text" name="forename" /></td>
+            </tr>
+            <tr>
+                <td> <label> Last Name:</label></td>
+                <td>
+                    <input maxlength="10" placeholder="last name" required type="text" name="ln" />
+                </td>
+            </tr>
+            <!-- <tr>
+                <td> <label> Age:</label></td>
+                <td> <input min="18" max="55" type="number" name="age" /></td>
+            </tr> -->
+            <tr>
+                <td> <label> Age:</label></td>
+                <td> <input min="18" max="55" type="range" oninput="this.nextElementSibling.value = this.value" name="age" value="18" />
+                    <output>18</output>
+                </td>
+            </tr>
+            <tr>
+                <td> <label> Resume:</label></td>
+                <td> <input type="datetime" />
+
+                </td>
+            </tr>
+            <tr>
+                <td> <label> Date Of Joining:</label></td>
+                <td> <input type="date" name="doj" /></td>
+            </tr>
+            <tr>
+                <td> <label> Email:</label></td>
+                <td> <input pattern="[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?" required name="emailid" /></td>
+            </tr>
+            <tr>
+                <td> <label> Gender:</label></td>
+                <td>
+                    <div>
+                        <input type="radio" name="gender" /> Male
+                        <input type="radio" name="gender" /> Female
+                        <input type="radio" name="gender" /> Wish Not to Specify
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td> <label> Skills:</label></td>
+                <td>
+                    <div>
+                        <select name="skill">
+                            <option value="csharp"> C#</option>
+                            <option value="java"> JAVA</option>
+                            <option value="mssqlserv"> SQL SERVER</option>
+                        </select>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <div>
+                        <button> Submit</button>
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+
+</html>

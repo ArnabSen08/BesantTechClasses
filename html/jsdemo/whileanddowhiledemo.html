@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <script>
+            let employees=[];
+            //let maxEmp=prompt("How many employees do you want to add?");
+            let maxEmp=0;
+            while (maxEmp<5){
+                let _empName= prompt("Enter Employee name");
+                if(employees.includes(_empName))
+                alert('employee already present');
+                else{
+                    employees.push(_empName);
+                    alert('employee added');
+                    maxEmp++;
+                }
+            }
+            alert("task completed");
+
+            employees.forEach((e)=>{
+                console.log(e);
+            });
+        </script>
+    </head>
+    <body></body>
+</html>

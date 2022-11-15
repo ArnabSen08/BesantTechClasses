@@ -1,0 +1,40 @@
+<html>
+    <head>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <form class="container-fluid">
+            <div class="row">
+                <div class="col-col-12 col-sm-6 col-md-6 col-lg-3">
+                    <label> First Name </label>
+                </div>
+                <div class="col-col-12 col-sm-6 col-md-6 col-lg-3">
+                    <input type="text" id="txtFirstName">
+                </div>
+                <div class="col-col-12 col-sm-6 col-md-6 col-lg-3">
+                    <label> Last Name </label>
+                </div>
+                <div class="col-col-12 col-sm-6 col-md-6 col-lg-3">
+                    <input type="text" id="txtLastName">
+                </div>
+            </div>
+            <div class="col-col-12 col-sm-6 col-md-6 col-lg-3">
+                <input onclick="document.getElementById('msgSuccess')"  type="button" value="Submit">
+            </div>
+            <div class="col-col-12 col-sm-6 col-md-6 col-lg-3">
+                <input onclick="document.getElementById('msgFailure')"  type="button" value="Cancel">
+            </div>
+            <div id="msgSuccess" style="display: none;">
+                Submitted Successfully
+            </div>
+            <div id="msgFailure" style="display: none;">
+                Submit Failed
+            </div>
+            <div class="alert alert-primary alert-dismissible fade show">
+                Submitted Successfully
+                <button type="button" class="btn-class" data-bs-target="#succMsg" data-bs-dismiss="alert" aria-label="close">Submit</button>
+            </div>
+        </form>
+    </body>
+</html>

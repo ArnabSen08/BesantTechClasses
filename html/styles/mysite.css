@@ -1,0 +1,11 @@
+.formBody {
+    margin-left: 50%;
+}
+
+.bgSubmit {
+    background-image: url('../images/btnSub.jpg');
+    background-repeat: no-repeat;
+    width: 113px;
+    height: 40px;
+    border: none;
+}

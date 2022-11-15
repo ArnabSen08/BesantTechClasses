@@ -1,0 +1,55 @@
+<html>
+
+<head>
+    <style>
+        a:link {
+            text-decoration: none;
+            color: cyan;
+            margin-left: 10px;
+        }
+        
+        a:hover {
+            color: black;
+        }
+        
+        a:visited {
+            text-decoration: none;
+            color: green;
+            margin-left: 10px;
+        }
+        
+        a:unvisited {
+            text-decoration: none;
+            color: red;
+            margin-left: 10px;
+        }
+        
+        a:active {
+            text-decoration: none;
+            color: yellow;
+            margin-left: 10px;
+        }
+    </style>
+    <script>
+        function navigate(link) {
+            document.getElementById('content').setAttribute('src', link);
+        }
+    </script>
+
+</head>
+
+<body>
+    <div>
+        <a onclick="navigate('https://wikipedia.org')" href="#">WIKIPEDIA</a>
+        <a onclick="navigate('employees.html')" href="#">EMPLOYEES</a>
+        <a onclick="navigate('floatdemo.html')" href="#">FLOAT DEMO</a>
+        <a onclick="navigate('registration.html')" href="#">REGISTRATION</a>
+        <a onclick="navigate('floatdemo.html')" href="#">FLOAT DEMO</a>
+        <a onclick="navigate('svgdemo.html')" href="#">SVG DEMO</a>
+    </div>
+    <div>
+        <iframe style="height:1000px;width:1000px;" id="content" src="https://wikipedia.org" />
+    </div>
+</body>
+
+</html>

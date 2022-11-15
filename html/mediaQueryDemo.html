@@ -1,0 +1,105 @@
+<html>
+
+<head>
+    <style>
+        @media (min-width:700px) and (max-width:2000px) {
+            div {
+                float: top;
+            }
+            section {
+                float: left;
+                width: 25%;
+            }
+            .header {
+                width: 100%;
+                background-color: blue;
+                color: white;
+                margin-bottom: 10px;
+            }
+        }
+        
+        @media (min-width:0px) and (max-width:700px) {
+            div {
+                float: top;
+            }
+            section {
+                float: top;
+                width: auto;
+            }
+            .header {
+                width: 100%;
+                background-color: blue;
+                color: white;
+                margin-bottom: 10px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <form action="usereg.asp" method="get" novalidate>
+
+        <div class="header">Registration Form</div>
+        <div>
+            <section> <label> First Name:</label></section>
+            <section> <input required placeholder="enter first name" title="enter first name" minlength="3" type="text" name="forename" /></section>
+            <section> <label> Last Name:</label></section>
+            <section>
+                <input maxlength="10" placeholder="last name" required type="text" name="ln" />
+            </section>
+        </div>
+
+
+        <div>
+            <section> <label> Age:</label></section>
+            <section> <input min="18" max="55" type="range" oninput="this.nextElementSibling.value = this.value" name="age" value="18" />
+                <output>18</output>
+            </section>
+            <section> <label> Resume:</label></section>
+            <section> <input type="datetime" />
+
+            </section>
+        </div>
+        <div>
+
+        </div>
+        <div>
+            <section> <label> Date Of Joining:</label></section>
+            <section> <input type="date" name="doj" /></section>
+            <section> <label> Email:</label></section>
+            <section> <input pattern="[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?" required name="emailid" /></section>
+        </div>
+
+        <div>
+            <section> <label> Gender:</label></section>
+            <section>
+                <div>
+                    <input type="radio" name="gender" /> Male
+                    <input type="radio" name="gender" /> Female
+                    <input type="radio" name="gender" /> Wish Not to Specify
+                </div>
+            </section>
+            <section> <label> Skills:</label></section>
+            <section>
+                <div>
+                    <select name="skill">
+                            <option value="csharp"> C#</option>
+                            <option value="java"> JAVA</option>
+                            <option value="mssqlserv"> SQL SERVER</option>
+                        </select>
+                </div>
+            </section>
+        </div>
+
+        <div>
+            <section colspan="2">
+                <div>
+                    <button> Submit</button>
+                </div>
+            </section>
+        </div>
+        </table>
+    </form>
+</body>
+
+</html>

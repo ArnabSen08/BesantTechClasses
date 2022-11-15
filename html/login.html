@@ -1,0 +1,19 @@
+<html>
+
+<head>
+    <script>
+        function login() {
+
+            localStorage.setItem('myItem', document.getElementById('txtName').value);
+            location.href = 'webstoragedemo.html';
+        }
+    </script>
+
+</head>
+
+<body>
+    <input type="text" id="txtName">
+    <button onclick="login()">login</button>
+</body>
+
+</html>

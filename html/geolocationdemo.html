@@ -1,0 +1,39 @@
+<html>
+
+<head>
+    <script>
+        let options = {
+            enableHighAccuracy: true,
+            timeout: 5000,
+            maximumAge: 0
+        }
+
+        function getLocation() {
+            navigator.geolocation.getCurrentPosition(
+                onSuccess,
+                onFailure,
+                options);
+        }
+
+        function onSuccess(res) {
+            console.log('your location details');
+            console.log('---------------------');
+            console.log('Latitude: ' + res.coords.latitude);
+            console.log('Logintude: ' + res.coords.longitude);
+            console.log('Accuracy: ' + res.coords.accuracy);
+        }
+
+
+        function onFailure(res) {
+            debugger
+        }
+    </script>
+
+</head>
+
+<body>
+    <button onclick="getLocation()">Click Me</button>
+
+</body>
+
+</html>

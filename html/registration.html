@@ -1,0 +1,78 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="./styles/mysite.css">
+    <style>
+        .formBody {
+            margin-left: 10%;
+            font-size: large;
+        }
+        
+        #txtFirstName {
+            color: red;
+            background-color: blue;
+            border: 1px solid brown;
+        }
+        
+        .bgRed {
+            background-color: red;
+        }
+        
+        .borderBlack {
+            border: 2px dashed black;
+        }
+    </style>
+
+</head>
+
+<body class="formBody">
+    <form action="usereg.asp" method="get">
+        <div>
+            <label> First Name:</label>
+        </div>
+        <div>
+            <input type="text" id="txtFirstName" name="forename" />
+        </div>
+        <div>
+            <label> Last Name:</label>
+        </div>
+        <div>
+            <input type="text" id="txtLastName" name="ln" />
+        </div>
+        <div>
+            <label> Age:</label>
+        </div>
+        <div>
+            <input class="bgRed borderBlack" type="number" name="age" />
+        </div>
+        <div>
+            <label> Date Of Joining:</label>
+        </div>
+        <div>
+            <input type="date" name="doj" />
+        </div>
+        <div>
+            <label> Gender:</label>
+        </div>
+        <div>
+            <input type="radio" name="gender" /> Male
+            <input type="radio" name="gender" /> Female
+            <input type="radio" name="gender" /> Wish Not to Specify
+        </div>
+        <div>
+            <label> Skills:</label>
+        </div>
+        <div>
+            <select name="skill">
+            <option value="csharp"> C#</option>
+            <option value="java"> JAVA</option>
+            <option value="mssqlserv"> SQL SERVER</option>
+        </select>
+        </div>
+        <div>
+            <button class="bgSubmit"> </button>
+        </div>
+    </form>
+</body>
+
+</html>

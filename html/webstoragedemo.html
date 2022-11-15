@@ -1,0 +1,25 @@
+<html>
+
+<head>
+    <script>
+        function storeinLS() {
+            localStorage.setItem('myItem', document.getElementById('txtVal').value);
+            localStorage.setItem('myAnotherItem', 'abc');
+        }
+    </script>
+
+</head>
+
+<body>
+    Input : <input type="text" id="txtVal" />
+    <button onclick="storeinLS()">Store In Local Storage</button>
+    <button onclick="sessionStorage.setItem('myItem',document.getElementById('txtVal').value)">Store In Session Storage</button>
+    <button onclick="alert(localStorage.getItem('myItem'))">Read From Local Storage</button>
+    <button onclick="alert(sessionStorage.getItem('myItem'))">Read From Session Storage</button>
+    <button onclick="localStorage.removeItem('myItem')">Remove From Local Storage</button>
+    <button onclick="sessionStorage.removeItem('myItem')">Remove From Session Storage</button>
+    <button onclick="localStorage.clear()">Remove All From Local Storage</button>
+    <button onclick="sessionStorage.clear()">Remove All From Session Storage</button>
+</body>
+
+</html>

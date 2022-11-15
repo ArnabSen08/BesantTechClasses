@@ -1,0 +1,64 @@
+<html lang="en">
+    <head>
+        <script>
+            let employeeList=[{
+                firstName:"John",
+                lastName:"Doe",
+                age:32,
+                jobhist:['hexaware','infosys','microsoft'],
+                skillset:['java','c++','javascript']
+            }, {
+                firstName:"Rahim",
+                lastName:"Raja",
+                age:23,
+                jobhist:['tcs','infosys','microsoft'],
+                skillset:['.net','c++','javascript']
+            }, {
+                firstName:"Rohini",
+                lastName:"Swetha",
+                age:30,
+                jobhist:['google','microsoft'],
+                skillset:['scala','javascript']
+            },
+            {
+                firstName:"Leena",
+                lastName:"Roy",
+                age:30,
+                jobhist:['google','microsoft'],
+                skillset:['scala','javascript']
+            }];
+            //employee.primarySkill='C#';
+            //employee.joiningDate='11 Oct 2021';
+            //console.log(employeeList);
+            //employeeList.splice(2,1);
+            let empFirstName= prompt('Enter the first name');
+            /*for(var i=0;i<employeeList.length; i++){
+                if(employeeList[i].firstName == empFirstName){
+                    console.log(employeeList[i]);
+                }
+            }*/
+            /*employeeList.forEach(function(emp) {
+                if(emp.firstName == empFirstName){
+                    console.log(emp);
+               */
+
+            /*for (const key in employeeList){
+                if(employeeList[key].firstName == empFirstName){
+                    console.log(employeeList[key]);
+                }
+            }*/
+
+            for (const e of employeeList){
+                if(e.firstName==empFirstName){
+                console.log(e)
+                }
+            }
+
+            //console.log(employeeList);
+        </script>
+
+    </head>
+    <body>
+
+    </body>
+</html>

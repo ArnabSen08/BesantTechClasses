@@ -1,0 +1,85 @@
+<html>
+
+<head>
+    <style>
+        tr:nth-child(2) {
+            background-color: aquamarine;
+        }
+        
+        option:nth-child(even) {
+            background-color: red;
+        }
+        
+        p:nth-of-type(odd) {
+            background-color: green;
+        }
+        
+        i {
+            background-color: orange;
+        }
+        
+        b>i {
+            background-color: green;
+        }
+    </style>
+</head>
+
+<body>
+    <table border="1" width="100%">
+        <tr>
+            <th align="left">First Name</th>
+            <th align="left"> Last Name</th>
+            <th align="left">Age</th>
+            <th align="left">Date Of Joining</th>
+            <th align="left">Skill</th>
+            <th align="left">Action</th>
+        </tr>
+        <tr>
+            <td>John</td>
+            <td>Saleth</td>
+            <td>45</td>
+            <td>01-Oct-2020</td>
+            <td>JAVA</td>
+            <td><button>Remove</button><button>Edit</button></td>
+        </tr>
+        <tr>
+            <td>Leena</td>
+            <td>P</td>
+            <td>34</td>
+            <td>10-Sep-2020</td>
+            <td><i>C#</i></td>
+            <td><button>Remove</button><button>Edit</button></td>
+        </tr>
+        <tr>
+            <td>Venkat</td>
+            <td>R</td>
+            <td>33</td>
+            <td>04-Apr-2020</td>
+            <td><b><i>SQL SERVER</i></b></td>
+            <td><button>Remove</button><button>Edit</button></td>
+        </tr>
+        <tr>
+            <td>Ram</td>
+            <td>K</td>
+            <td>43</td>
+            <td>01-Jun-2020</td>
+            <td>JAVA</td>
+            <td><button>Remove</button><button>Edit</button></td>
+        </tr>
+
+    </table>
+    <div>
+        <select>
+            <option>C#</option>
+            <option>JAVA</option>
+            <option>VB</option>
+            <option>SQL</option>
+        </select>
+        <p>C# is introduced by microsoft</p>
+        <p>JAVA is introduced by Sum Microssystem</p>
+        <p>VB is function oriented</p>
+        <p>SQL is database technology</p>
+    </div>
+</body>
+
+</html>
