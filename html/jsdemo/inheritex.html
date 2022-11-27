@@ -1,0 +1,33 @@
+<html lang="en">
+    <head>
+        <script>
+            function Person(_firstname, _lastname, _age, _gender){
+                this.firstname = _firstname;
+                this.lastname = _lastname;
+                this.age = _age;
+                this.gender = _gender;
+            }
+            // Default Functionality
+            Person.prototype.great = function() {
+                return "Hello, I am a person, My name is :" + 
+                this.firstname + " " + this.lastname;
+            }
+            Teacher.prototype = new Person();
+            function Teacher(_firstname, _lastname, _age, _gender, _subject){
+                this.subject = _subject;
+                Person.call(this, _firstname, _lastname, _age, _gender);
+            }
+            // Overriding ( Polymorphism )
+            Teacher.prototype.great = function(){
+                return Person.prototype.great.call(this)+" "+ "I am a teacher as well, I teach" + " " + this.subject;
+            }
+            let t = new Teacher("Jessica", "Jeremie",22, "Female", "Science");
+            console.log(t.great());
+            let p = new Person("John", "Doe", 27, "Male");
+            console.log(p.great());
+        </script>
+    </head>
+    <body>
+        <h1>Javascript Demo</h1>
+    </body>
+</html>
