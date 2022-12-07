@@ -1,7 +1,11 @@
-import React from "react";
+import React from 'react';
 
-class MyFirstComp extends React.Components {
-    render() {
-
+export default class MyFirstComp extends React.Component{
+    render(){
+        return <div>
+            Hello World;
+            <br />
+            <button>Click ME</button>
+        </div>
     }
 }
