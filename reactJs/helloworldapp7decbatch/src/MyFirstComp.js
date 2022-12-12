@@ -1,11 +1,27 @@
 import React from 'react';
 
+// 3 phases --> Mounting Phases --> component is loaded in memory
+// Updating Phase --> component is updated in this phase, this.setState
+// Unmounting Phase --> when you remove comp from memory
+
+// life cycle methods
+
+// mounting phase --> constructor, getDerievedStateFromProps, render, componentdidmount
+// updating phase -> getDerievedStateFromProps, ShouldComponentUpdate, render, componentdidmount
+
+
+
 export default class MyFirstComp extends React.Component{
     constructor(props){
+        console.log("I am in constructor"); //initialization
         super(props);
         //this.Name="Arnab";
         this.State={Name: "Arnab Sen",
         Age:32}
+    }
+
+    static getDerievedStateFromProps(state,props){
+        console.log("I am in render method");
     }
 
     handleChange=(e)=>{
@@ -14,6 +30,18 @@ export default class MyFirstComp extends React.Component{
             
         })
     };
+
+    componentDidMount(){
+        console.log("I am in component did mount");
+        this.setState({
+
+        })
+    }
+
+    shouldComponentUpdate(){
+        console.log("I am component should update");
+        return true;
+    }
 
     handleChange1(e){
         this.setState({

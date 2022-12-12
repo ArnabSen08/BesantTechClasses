@@ -2,6 +2,7 @@ import logo from './logo.svg';
 import React from 'react';
 import './App.css';
 import MyFirstComp from './MyFirstComp';
+import { Functional } from './Functional';
 
 function App() {
   var Details = {
@@ -14,6 +15,7 @@ function App() {
   return (
     <div>
       <MyFirstComp UserDetails = {Details} Countries = {CountriesName}/>
+      <Functional UserDetails1 = {Details} />      
 
     </div>
   );
