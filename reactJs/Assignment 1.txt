@@ -7,10 +7,3 @@ Pass the list of countries from here to search page
 Add a textbox with country name filtering, type U , then USA, UK
 
 
-export const Functional = (props) =>{
-    return(
-        <div>
-            {props.Details.Name}
-        </div>
-    )
-}
