@@ -7,6 +7,11 @@ import Country from './Country';
 import Search from './Search';
 import { NewFC } from './NewFC';
 import ChangePassword from './ChangePassword';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { Enq } from './Enq';
+import { About } from './About';
+import { Fallback } from './Fallback';
+import { Home } from './Home';
 
 const Countries = ["UK","USA","India","Brazil","Nepal","Portugal","France","Itlay","England"];
 
@@ -16,10 +21,7 @@ function App() {
     Age : 32,
     Desg : "Analyst"
   };
-
-  
-
-
+ 
 
   var CountriesName = ["UK","USA","India","Brazil","Nepal","Portugal","France","Itlay"];
   const UserName="Arnab"
@@ -42,6 +44,14 @@ function App() {
           </li>
         ))}
       </div>
+      <BrowserRouter>
+        <Routes>
+        <Route path="/" element={<Home/>}></Route>
+        <Route path="/About" element={<About/>}></Route>
+        <Route path="/Enquiry" element={<Enq/>}></Route>
+        <Route path='*' element={<Fallback />}></Route>
+        </Routes>
+      </BrowserRouter>
 
     </div>
   );
